@@ -23,10 +23,10 @@ body {
 }
 
 .navbar {
-  padding: 30px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-column-gap: 3em;
+  grid-column-gap: 1.5em;
 }
 
 .logo {
@@ -40,8 +40,45 @@ body {
   justify-content: space-between;
 }
 
-.links a {
-  /* margin-right: 30px; */
+.hero {
+  text-align: center;
+  background: url(../images/bg-curvy-mobile.svg),
+    linear-gradient(
+      to top,
+      var(--dark-blue-main) 0%,
+      var(--dark-blue-main) 200px,
+      var(--dark-blue-email) 200px,
+      var(--dark-blue-email) 100%
+    );
+  background-position: center bottom 200px, center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.hero-text {
+  max-width: 440px;
+  line-height: 1.5em;
+}
+
+.button {
+  background-color: var(--cyan);
+  border-radius: 22px;
+  border: none;
+  box-shadow: none;
+  color: var(--white);
+  width: 100%;
+  padding: 1em;
+  margin: 2em 0 3em;
 }
 
 .attribution {
@@ -69,5 +106,18 @@ body {
   .links {
     display: grid;
     grid-template-columns: repeat(3, 150px);
+  }
+  .hero {
+    background: url(../images/bg-curvy-desktop.svg);
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 440px;
+  }
+  .button {
+    margin: 2em 0 6em;
   }
 }
