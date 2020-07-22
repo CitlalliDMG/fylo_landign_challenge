@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/df4ee69ffe.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- displays site properly based on user's device -->
 
     <link
@@ -20,11 +24,13 @@
   </head>
   <body>
     <header class="navbar">
-      <img src="images/logo.svg" alt="Fylo logo" class="logo" />
-      <div class="links">
-        <a>Features</a>
-        <a>Team</a>
-        <a>Sign In</a>
+      <div class="nav-wrapper">
+        <img src="images/logo.svg" alt="Fylo logo" class="logo" />
+        <div class="links">
+          <a class="hyperlink" href="#">Features</a>
+          <a class="hyperlink" href="#">Team</a>
+          <a class="hyperlink" href="#">Sign In</a>
+        </div>
       </div>
     </header>
     <section class="hero">
@@ -105,7 +111,7 @@
           Securely share files and folders with friends, family and colleagues
           for live collaboration. No email attachments required.
         </p>
-        <a class="link">
+        <a class="link" href="#">
           See how Fylo works
         </a>
       </div>
@@ -203,16 +209,80 @@
       </form>
     </div>
     <footer class="footer">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua +1-543-123-4567
-      example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://citlallidmg.github.io">Citlalli Del Moral</a>.
-      </p>
+      <div class="wrapper">
+        <img src="images/logo.svg" alt="Fylo logo" />
+        <section class="footer-grid">
+          <div class="contact">
+            <p class="address">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <p class="phone">
+              +1-543-123-4567
+            </p>
+            <p class="email">
+              <a href="mailto:example@fylo.com" class="hyperlink">
+                example@fylo.com
+              </a>
+            </p>
+          </div>
+          <ul>
+            <li>
+              <a class="hyperlink" href="#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a class="hyperlink" href="#">
+                Jobs
+              </a>
+            </li>
+            <li>
+              <a class="hyperlink" href="#">
+                Press
+              </a>
+            </li>
+            <li>
+              <a class="hyperlink" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a class="hyperlink" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a class="hyperlink" href="#">
+                Terms
+              </a>
+            </li>
+            <li>
+              <a class="hyperlink" href="#">
+                Privacy
+              </a>
+            </li>
+          </ul>
+          <div class="social">
+            <a href="#">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> </a>
+          </div>
+        </section>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://citlallidmg.github.io">Citlalli Del Moral</a>.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
