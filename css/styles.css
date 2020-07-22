@@ -75,7 +75,7 @@ p {
 }
 
 .button {
-  background-color: var(--cyan);
+  background-image: linear-gradient(to right, var(--cyan) 0%, var(--blue) 100%);
   border-radius: 22px;
   border: none;
   box-shadow: none;
@@ -139,7 +139,7 @@ p {
 
 .testimonials {
   padding: 0 29px;
-  margin: 5em 0;
+  margin: 5em 0 0;
 }
 
 .quotes {
@@ -154,7 +154,8 @@ p {
 }
 
 .card {
-  background-color: var(--dark-blue-email);
+  background-color: var(--dark-blue-testimonials);
+  box-shadow: 5px 10px 8px var(--dark-blue-email);
   border-radius: 5px;
   padding: 1.5em;
 }
@@ -183,6 +184,43 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 30px;
+}
+
+.form-container {
+  background-color: var(--dark-blue-email);
+  margin: 0 29px;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 5px 10px 8px var(--dark-blue-footer);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 180px;
+}
+
+.form input {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1em;
+  border-radius: 22px;
+  border: none;
+  color: var(--dark-blue-email);
+  width: 100%;
+  max-width: 250px;
+  margin: 1em auto;
+}
+
+.form .button {
+  width: 100%;
+  margin: 2em auto 1em;
+}
+
+.footer {
+  background-color: var(--dark-blue-footer);
+  padding: 15em 0 2em;
 }
 
 .attribution {
@@ -281,7 +319,7 @@ p {
 
   .testimonials {
     max-width: 950px;
-    margin: 100px auto 200px;
+    margin: 100px auto 0;
   }
 
   .container {
@@ -291,5 +329,23 @@ p {
 
   .card {
     max-width: 300px;
+  }
+
+  .form-container {
+    max-width: 650px;
+    margin: 0 auto;
+    top: 100px;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    grid-column-gap: 2em;
+    margin: 0 2em;
+  }
+
+  .form input {
+    max-width: 100%;
+    margin: 2em auto 1em;
   }
 }
